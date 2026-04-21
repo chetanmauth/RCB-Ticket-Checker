@@ -61,14 +61,14 @@ pip install selenium
 ---
 
 # 📸 Sample Output
-When tickets are NOT available:
-🕒 16:45:10
-❌ Not available yet
+When tickets are NOT available:<br>
+🕒 16:45:10<br>
+❌ Not available yet<br>
 ⏳ Next check in: 10s
 
 # When tickets ARE available:
-🔥 TICKETS AVAILABLE → 'Buy Now'
-🔴 Closed debug Chrome.
+🔥 TICKETS AVAILABLE → 'Buy Now'<br>
+🔴 Closed debug Chrome.<br>
 🌐 Opened in your Chrome — GO BUY NOW!
 
 ---
