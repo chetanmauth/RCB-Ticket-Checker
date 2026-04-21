@@ -1,7 +1,5 @@
-# RCB-Ticket-Checker
+# 🎟️ RCB-Ticket-Checker
 RCB Ticket Availability Checker is a lightweight automation tool that continuously monitors the official Royal Challengers Bengaluru ticket website and instantly alerts the user when tickets become available.
-
-# 🎟️ RCB Ticket Availability Checker
 
 A Python-based automation tool that continuously monitors the official Royal Challengers Bengaluru (RCB) ticket website and instantly alerts you when tickets become available.
 
@@ -12,7 +10,7 @@ A Python-based automation tool that continuously monitors the official Royal Cha
 This project helps you stay ahead in the race to book RCB match tickets by:
 
 - Monitoring the official ticket page
-- Detecting "Buy Tickets" / "Buy Now" buttons
+- Detecting "Buy Tickets" buttons
 - Alerting you instantly
 - Opening the booking page in your logged-in Chrome browser
 
@@ -23,10 +21,8 @@ This project helps you stay ahead in the race to book RCB match tickets by:
 ## 🚀 Features
 
 - 🔍 Real-time ticket availability tracking
-- 🎯 Smart detection of ticket buttons
 - 🔔 Instant alert (sound + console)
 - 🌐 Opens booking page in your real Chrome (logged-in)
-- 🧠 Reduces false positives
 - 🔄 Auto-restarts driver on crash
 - ⏳ Live countdown between checks
 - 🪶 Lightweight and easy to run
@@ -49,7 +45,6 @@ rcb-ticket-checker/
 ├── README.md # Project documentation<br>
 └── requirements.txt # Dependencies (optional)<br>
 
-
 ---
 
 ## 📦 Installation
@@ -59,8 +54,9 @@ rcb-ticket-checker/
 bash
 git clone https://github.com/your-username/rcb-ticket-checker.git
 cd rcb-ticket-checker
-
 pip install selenium
+
+---
 
 # 📸 Sample Output
 When tickets are NOT available:
@@ -72,11 +68,14 @@ When tickets are NOT available:
 🔥 TICKETS AVAILABLE → 'Buy Now'
 🔴 Closed debug Chrome.
 🌐 Opened in your Chrome — GO BUY NOW!
-🔧 Configuration
 
-# Modify check interval in code:
+---
+
+# 🔧 Configuration
+
+## Modify check interval in code:
 CHECK_INTERVAL = 10
 
-# Recommended:
+## Recommended:
 10s → Fast detection
 20–30s → Safer (less blocking risk)
