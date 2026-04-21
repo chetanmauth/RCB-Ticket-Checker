@@ -44,10 +44,10 @@ This project helps you stay ahead in the race to book RCB match tickets by:
 ## 📂 Project Structure
 
 rcb-ticket-checker/
-│
+│<br>
 ├── RCB_tickets.py # Main script<br>
-├── README.md # Project documentation
-└── requirements.txt # Dependencies (optional)
+├── README.md # Project documentation<br>
+└── requirements.txt # Dependencies (optional)<br>
 
 
 ---
