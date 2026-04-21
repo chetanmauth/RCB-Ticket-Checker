@@ -81,8 +81,14 @@ def restart_driver():
 
     print("🔄 Restarting driver...")
     time.sleep(4)
+
+    # create new driver
     driver = make_driver()
 
+    # ✅ load your URL again
+    driver.get(URL)
+
+    WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
 
 # 🔍 Check ticket availability
 def check() -> bool:
