@@ -48,10 +48,11 @@ rcb-ticket-checker/
 
 ## 📦 Installation
 
-### 1. Clone Repository
+### Clone Repository
 
 bash
 git clone https://github.com/your-username/rcb-ticket-checker.git<br>
+
 cd rcb-ticket-checker<br>
 pip install selenium 
 
@@ -80,3 +81,5 @@ CHECK_INTERVAL = 10
 ## Recommended:
 10s → Fast detection
 20–30s → Safer (less blocking risk)
+
+
