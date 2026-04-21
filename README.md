@@ -41,9 +41,8 @@ This project helps you stay ahead in the race to book RCB match tickets by:
 
 rcb-ticket-checker/
 │<br>
-├── RCB_Tickets_Checker.py # Main script<br>
-├── README.md # Project documentation<br>
-└── requirements.txt # Dependencies (optional)<br>
+├── RCB_tickets_checker.py   # Main script<br>
+└── README.md               # Project documentation<br>
 
 ---
 
