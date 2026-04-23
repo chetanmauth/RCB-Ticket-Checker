@@ -8,6 +8,7 @@ import time
 import sys
 import webbrowser
 
+DETECT_TEXT = "buy tickets"
 URL = "https://shop.royalchallengers.com/ticket"
 CHECK_INTERVAL = 300 # seconds between checks
 found_once = False  # Flag to stop checking after first detection
@@ -116,7 +117,7 @@ def check() -> bool:
                 continue
 
             # 🎯 Ticket detection logic
-            if ("buy tickets" in text) and el.is_displayed():
+            if (DETECT_TEXT in text) and el.is_displayed():
                 print(f"🔥 TICKETS AVAILABLE → '{el.text.strip()}'")
                 return True
 
