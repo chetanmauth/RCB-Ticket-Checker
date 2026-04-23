@@ -138,8 +138,9 @@ def countdown(seconds: int):
 
 # 🚀 Script start
 print(f"\n🚀 Monitoring: {URL}")
-print(f"   Interval : every {CHECK_INTERVAL}s")
-print("   Chrome   : minimized debug window (Do not close the chrome window.)\n")
+print(f"   Interval      : every {CHECK_INTERVAL}s")
+print("   Chrome        : minimized the debug window (Do not close the chrome window.)")
+print(f"   Checking for  : '{DETECT_TEXT}'\n")
 
 # 🔁 Main loop
 try:
