@@ -9,7 +9,7 @@ Allows you to customize the checking interval and alerts you immediately when ti
 
 This project helps you stay ahead in the race to book RCB match tickets by:
 
-- Monitoring the official ticket page
+- Monitoring the official ticket page continuously
 - Detecting "Buy Tickets" buttons
 - Alerting you instantly by opening the tickets page & sound alert
 
