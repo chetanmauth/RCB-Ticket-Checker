@@ -8,9 +8,10 @@ import time
 import sys
 import webbrowser
 
-DETECT_TEXT = "buy tickets"
-URL = "https://shop.royalchallengers.com/ticket"
-CHECK_INTERVAL = 30 # seconds between checks
+URL = "https://shop.royalchallengers.com/ticket"    # Tickets URL
+
+DETECT_TEXT = "buy tickets"  # Detects button when tickets go live
+CHECK_INTERVAL = 30 # seconds between tickets are checks (Keep 15s - 30s during peak time)
 found_once = False  # Flag to stop checking after first detection
 
 # 🔧 Create and configure Selenium Chrome driver
@@ -31,14 +32,12 @@ def make_driver() -> webdriver.Chrome:
     driver.minimize_window()  # keep it hidden in background
     return driver
 
-
 # 🌐 Initialize driver once (persistent session)
 driver = make_driver()
 
 # 🧹 Normalize button text (clean + lowercase)
 def normalize_text(text: str) -> str:
     return " ".join(text.split()).strip().lower()
-
 
 # 🔔 Trigger alert + open real Chrome tab
 def alert_and_open():
@@ -69,7 +68,6 @@ def alert_and_open():
     # 🌐 Open real Chrome (user session)
     webbrowser.open_new_tab(URL)
     print("🌐 Opened in your Chrome — GO BUY NOW!!")
-
 
 # 🔄 Restart driver if crash occurs
 def restart_driver():
@@ -103,7 +101,6 @@ def check() -> bool:
         WebDriverWait(driver, 15).until(
             EC.presence_of_element_located((By.TAG_NAME, "body"))
         )
-
         # Get all clickable elements
         elements = driver.find_elements(By.XPATH, "//button | //a")
 
@@ -131,22 +128,18 @@ def check() -> bool:
         restart_driver()
         return False
 
-
 # ⏳ Countdown timer between checks
 def countdown(seconds: int):
-    
     
     for i in range(seconds, 0, -1):
         print(f"\r⏳ Next check in: {i:02d}s ", end="", flush=True)
         time.sleep(1)
     print("\r🔄 Checking now...          ", flush=True)
 
-
 # 🚀 Script start
 print(f"\n🚀 Monitoring: {URL}")
 print(f"   Interval : every {CHECK_INTERVAL}s")
 print("   Chrome   : minimized debug window (Do not close the chrome window.)\n")
-
 
 # 🔁 Main loop
 try:
@@ -159,11 +152,9 @@ try:
 
         countdown(CHECK_INTERVAL)
 
-
 # 🛑 Manual stop
 except KeyboardInterrupt:
     print("\n\n🛑 Stopped by user.")
-
 
 # 🧹 Cleanup
 finally:
