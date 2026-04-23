@@ -4,7 +4,7 @@ RCB Ticket Availability Checker is a lightweight automation tool that continuous
 A Python-based automation tool that continuously monitors the official Royal Challengers Bengaluru (RCB) ticket website and instantly alerts you when tickets become available.
 
 
-<img src="https://github.com/chetanmauth/RCB-Ticket-Checker/blob/main/21-4-2026.jpg" width="200"></br>
+<img src="https://github.com/chetanmauth/RCB-Ticket-Checker/blob/main/21-4-2026.jpg" width="300"></br>
 ---
 
 ## 📌 Project Overview
