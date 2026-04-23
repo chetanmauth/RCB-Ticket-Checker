@@ -46,27 +46,27 @@ pip install selenium
 
 ---
 
-# 📸 Sample Output
-When tickets are NOT available:<br>
+## 📸 Sample Output
+### When tickets are NOT available:<br>
 🕒 16:45:10<br>
 ❌ Not available yet<br>
 ⏳ Next check in: 10s
 
-# When tickets ARE available:
+### When tickets ARE available:
 🔥 TICKETS AVAILABLE → 'Buy Now'<br>
 🔴 Closed debug Chrome.<br>
 🌐 Opened in your Chrome — GO BUY NOW!
 
 
-# Sucessfully Triggered & Booked Ticket
+## Sucessfully Triggered & Booked Ticket
 
 <img src="https://github.com/chetanmauth/RCB-Ticket-Checker/blob/main/21-4-2026.jpg" width="300"></br>
 
 ---
 
-# 🔧 Configuration
+## 🔧 Configuration
 
-## Modify check interval in code:
+### Modify check interval in code:
 CHECK_INTERVAL = 10
 
 ## Recommended:
