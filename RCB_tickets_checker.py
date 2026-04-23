@@ -10,7 +10,7 @@ import webbrowser
 
 DETECT_TEXT = "buy tickets"
 URL = "https://shop.royalchallengers.com/ticket"
-CHECK_INTERVAL = 300 # seconds between checks
+CHECK_INTERVAL = 30 # seconds between checks
 found_once = False  # Flag to stop checking after first detection
 
 # 🔧 Create and configure Selenium Chrome driver
