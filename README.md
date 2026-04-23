@@ -37,7 +37,7 @@ rcb-ticket-checker/
 ### Clone Repository
 
 bash
-git clone https://github.com/your-username/rcb-ticket-checker.git<br>
+git clone https://github.com/chetanmauth/RCB-Ticket-Checker.git<br>
 
 cd rcb-ticket-checker<br>
 pip install selenium 
