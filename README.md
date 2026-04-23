@@ -15,15 +15,6 @@ This project helps you stay ahead in the race to book RCB match tickets by:
 
 ---
 
-## 🚀 Features
-
-- 🔍 Real-time ticket availability tracking
-- 🔔 Instant alert (sound + console)
-- 🔄 Auto-restarts driver on crash
-- ⏳ Live countdown between checks
-
----
-
 ## 🛠️ Tech Stack
 
 - Python 3.x
